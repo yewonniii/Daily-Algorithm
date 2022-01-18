@@ -22,7 +22,7 @@ public class KMP {
 	private static void getPi() {
 		int j=0;
 		for (int i = 0; i < pattern.length(); i++) {
-			//맞는 위치가 나올 떄까지 j-1칸의 공통 부분 위치로 이동
+			//일치하는 위치가 나올 떄까지 j-1칸의 공통 부분 위치로 이동
 			while(j>0 && pattern.charAt(i) != pattern.charAt(j)) {
 				j=pi[j-1];
 			}
@@ -38,7 +38,7 @@ public class KMP {
 	private static void KMP() {
 		int j=0;
 		for (int i = 0; i < origin.length(); i++) {
-			//맞는 위치가 나올 때까지 j-1칸의 공통 부분 위치로 이동
+			//일치하는 위치가 나올 때까지 j-1칸의 공통 부분 위치로 이동
 			while(j>0 && origin.charAt(i) != pattern.charAt(j)) {
 				j = pi[j-1];
 			}
