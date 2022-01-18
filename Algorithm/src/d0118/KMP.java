@@ -7,7 +7,6 @@ import java.io.InputStreamReader;
 public class KMP {
 	public static int result, pi[];
 	public static String origin, pattern;
-	
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		origin = br.readLine();
