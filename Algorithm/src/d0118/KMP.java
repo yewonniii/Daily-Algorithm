@@ -5,7 +5,6 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class KMP {
-
 	public static int result, pi[];
 	public static String origin, pattern;
 	
