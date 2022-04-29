@@ -17,7 +17,7 @@ public class Main_BOJ_13410_거꾸로구구단 {
 		
 		int max =0;
 		
-		for (int i = 1; i < K; i++) {
+		for (int i = 1; i <= K; i++) {
 			int temp = N*i;
 			String str = String.valueOf(temp);
 			StringBuilder sb = new StringBuilder();
